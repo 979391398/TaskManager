@@ -3,8 +3,7 @@
   <view class="border"></view>
   <view class="xin-list" bindtouchend="moveItem" bindtouchstart="moveStart">
     <block wx:for="{{xinList}}" wx:key="key" wx:for-index="idx">
-      <view class="single" style="opacity:{{item.display}};transform: translateX({{item.slateX}}) scale({{item.scale}});z-index:{{item.zIndex}};transform-origin: 100% 50% 0;{{item.style}}">
-       
+      <view class="single" style="opacity:{{item.display}};transform: translateX({{item.slateX}}) scale({{item.scale}});z-index:{{item.zIndex}};transform-origin: 100% 50% 0;{{item.style}}">      
         <view class="title">{{item.thestyle}}\n</view>
         <view class='mainbody'>
         <view class="body">任务名称：<span class="body-span">{{item.name}}</span></view>
@@ -16,7 +15,7 @@
         </view>
         <view class="xin-xie">加油！打工人！！！</view>
       </view>
-      
+
     </block>
   </view>
 </view>
