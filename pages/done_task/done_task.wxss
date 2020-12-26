@@ -1,1 +1,69 @@
-/* pages/done_task/done_task.wxss */
+
+.xin{
+  padding:0 20px;
+}
+
+.xin .border{
+  height: 0;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  width:80%;
+}
+.xin-list{
+  width: 100%;
+  position: relative;
+}
+.xin-list .single:nth-of-type(1){
+  z-index: 10;
+}
+.xin-list .single:nth-of-type(n+4){
+  
+  transform:translateX(40px) scale(0.6);
+  transform-origin: 100% 50% 0; 
+}
+.xin-list .single{
+  transition: all 1s;
+  overflow: hidden;
+  border-radius: 1px;
+  margin-top:15px;
+  width: calc(100% - 20px);
+  height: calc(100vh - 80px - 11vh);
+  background: #fff;
+  position: absolute;
+  box-shadow: 3px 3px 10px 0px #777;
+}
+.title{
+  font-style: normal;
+  font-size: 30px;
+  font-weight: bold;
+}
+.mainbody{
+  line-height: 50px;
+}
+.body{
+  font-style: normal;
+  font-size: 20px;
+  font-weight: bold;
+}
+.body-span{
+  font-style: normal;
+  font-size: 20px;
+  color: rgb(119, 118, 118);
+}
+
+.th-text {
+  font-style: normal;
+  font-size: 20px;
+  color: rgb(119, 118, 118);
+  display: block;
+  height: 70px;
+  max-height: 70px;
+  line-height: 25px;
+}
+.xin-xie{
+  clear: both;
+  font-size: 15px;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+}

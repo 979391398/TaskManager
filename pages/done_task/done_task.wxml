@@ -1,2 +1,22 @@
 <!--pages/done_task/done_task.wxml-->
-<text>pages/done_task/done_task.wxml</text>
+<view class="xin">
+  <view class="border"></view>
+  <view class="xin-list" bindtouchend="moveItem" bindtouchstart="moveStart">
+    <block wx:for="{{xinList}}" wx:key="key" wx:for-index="idx">
+      <view class="single" style="opacity:{{item.display}};transform: translateX({{item.slateX}}) scale({{item.scale}});z-index:{{item.zIndex}};transform-origin: 100% 50% 0;{{item.style}}">
+       
+        <view class="title">{{item.thestyle}}\n</view>
+        <view class='mainbody'>
+        <view class="body">任务名称：<span class="body-span">{{item.name}}</span></view>
+        <view class="body">任务详情：<span class="th-text" disabled='true'  style="overflow-y:auto;overflow-x:scroll;" selectable="true">{{item.detail}}</span></view>
+        <view class="body">负责人：<span class="body-span">{{item.charge}}</span></view>
+        <view class="body">协助人：<span class="body-span">{{item.help}}</span></view>
+        <view class="body">到期时间：<span class="body-span">{{item.deadline}}</span></view>
+        <view class="body">完成进度：<span class="body-span"> {{item.completion}}</span></view>
+        </view>
+        <view class="xin-xie">加油！打工人！！！</view>
+      </view>
+      
+    </block>
+  </view>
+</view>

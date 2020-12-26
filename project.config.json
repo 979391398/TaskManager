@@ -33,14 +33,13 @@
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
-    "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.14.1",
-  "appid": "wxf52d088f120d859b",
+  "appid": "wxb4747d96776806b0",
   "projectname": "Diroooomy",
   "debugOptions": {
     "hidedInDevtools": []
